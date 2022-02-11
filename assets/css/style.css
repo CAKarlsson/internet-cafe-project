@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&family=Lato&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 body{
     font-family: Lato, sans-serif;
-    font-weight: ;
-    color: ;
+    font-weight: 300;
+    color: white;
+    background-color: #804000;
 }
 
 /* headings and logo */
@@ -12,7 +19,10 @@ h1,
 h2 {
     font-family: BioRhyme, sans-serif;
     letter-spacing: 3px;
-    color: black;
+    color: white;
+    font-size: 60px;
+    letter-spacing: 15px;
+    
 }
 
 #logo {
@@ -30,7 +40,11 @@ h2 {
     position: relative;
     top: 18px;
     left: 10px;
-    
+  }
+
+  .header a {
+    text-decoration: none;
+    color:white
   }
 
 /* nav links */
@@ -50,4 +64,24 @@ h2 {
 #menu a {
     text-decoration: none;
     color: inherit;
+}
+
+
+/* hero image and cover text */
+
+#hero-outer {
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#cover-text {
+    color: white;
+}
+
+#hero-image {
+    height: 800px;
+    width: 100%;
+    background: url(../images/hero-image.jpg) no-repeat center center;
 }

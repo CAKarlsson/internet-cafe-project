@@ -11,14 +11,43 @@ body{
 h1,
 h2 {
     font-family: BioRhyme, sans-serif;
-    font-weight: ;
-    color: ;
+    letter-spacing: 3px;
+    color: black;
 }
 
 #logo {
     float: left;
-
 }
+
+.header img {
+    float: left;
+    width: 125px;
+    height: 125px;
+    background: #555;
+  }
+  
+  .header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+    
+  }
 
 /* nav links */
 
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu li {
+    float: right;
+    margin-right: 30px;
+    list-style-type: none;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -10,7 +10,7 @@ body{
     font-family: Lato, sans-serif;
     font-weight: 300;
     color: white;
-    background-color: #804000;
+    background-color: #FF6F61;
 }
 
 /* headings and logo */
@@ -33,14 +33,13 @@ h2 {
     float: left;
     width: 125px;
     height: 125px;
-    background: #555;
+    border: 10px solid transparent;
   }
   
   .header h1 {
     position: relative;
     top: 18px;
     left: 10px;
-    font-style: italic;
   }
 
 /* burger menu test */
@@ -210,7 +209,7 @@ h2 {
 /* hero image and cover text */
 
 #hero-outer {
-    height: 800px;
+    height: 900px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -221,7 +220,32 @@ h2 {
 }
 
 #hero-image {
-    height: 800px;
+    height: 900px;
     width: 100%;
     background: url(../images/hero-image.jpg) no-repeat center center;
+}
+
+
+/* footer styles */
+
+footer {
+    height: 150px;
+    position: relative;
+    bottom: 0;
+
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: white;
 }

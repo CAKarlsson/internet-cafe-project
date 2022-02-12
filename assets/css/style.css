@@ -6,23 +6,36 @@
     border: none;
 }
 
-body{
+html, body{
+    width: 100%;
+    height: 100%;
     font-family: Lato, sans-serif;
     font-weight: 300;
     color: white;
     background-color: #FF6F61;
+    letter-spacing: 0.8px;
+    font-size: 20px;
+    overflow-x: hidden;
 }
 
 /* headings and logo */
 
-h1,
-h2 {
+h1 {
     font-family: BioRhyme, sans-serif;
     letter-spacing: 3px;
     color: white;
-    font-size: 60px;
+    font-size: 150%;
     letter-spacing: 15px;
     
+}
+
+h2 {
+  font-family: BioRhyme, sans-serif;
+  letter-spacing: 3px;
+  color: white;
+  font-size: 125%;
+  letter-spacing: 15px;
+  
 }
 
 #logo {
@@ -31,9 +44,9 @@ h2 {
 
 .header img {
     float: left;
-    width: 125px;
-    height: 125px;
-    border: 10px solid transparent;
+    width: 50px;
+    height: 50px;
+    
   }
   
   .header h1 {
@@ -46,29 +59,33 @@ h2 {
 /* Style the navigation menu */
 
 #navbar {
-  width: 400px;
-  right: 0;
-  position: absolute;
+  position: fixed;
+  z-index: 1;
 }
 
 .topnav {
   overflow: hidden;
   background-color: #333;
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
   display: none;
+
 }
 
 /* Style navigation menu links */
 .topnav a {
   color: white;
-  padding: 14px 16px;
+  padding: 10px 13px;
   text-decoration: none;
   font-size: 17px;
   display: block;
+  right: 0;
+  top: 0;
 }
 
 /* Style the hamburger menu */
@@ -90,8 +107,8 @@ h2 {
 .active {
   background-color: #04AA6D;
   color: white;
+  width: 90px;
 }
-/* nav links */
 
 /* hero image and cover text */
 
@@ -106,6 +123,8 @@ h2 {
     height: 900px;
     width: 100%;
     background: url(../images/hero-image.jpg) no-repeat center center;
+    background-size: cover;
+    margin-top: 50px;
 }
 
 #hero-image-txt {
@@ -129,15 +148,17 @@ h2 {
 
 #about-us {
   height: 600px;
-  margin-top: 200px;
-  margin-left: 250px;
+  margin-top: 15px;
+  text-align: center;
 }
 
 /* footer styles */
 
 footer {
-    height: 60px;
-    width: 100%;
+  position: fixed;
+  left:0px;
+   bottom:0px;
+   height:30px;
 }
 
 .social-networks {
@@ -161,11 +182,42 @@ footer {
 /* for larger to medium screens size from 1200px wide and down */
 
 @media screen and (min-width: 1200px) {
+hero-outer {
+    height: 900px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
 
+#hero-image {
+    height: 900px;
+    width: 100%;
+    background: url(../images/hero-image.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#hero-image-txt {
+    color: white;
+    position: absolute;
+    left: 125px;
+    bottom: 50px;
+    background-color: rgba(18, 30, 199, 0.5);
+    font-family: BioRhyme, sans-serif;
+    font-size: 140%;
+    position: absolute;
+    padding: 15px;
+}
+
+#tripadv {
+  bottom: 0px;
+  position: absolute;
+  height: 10%;
+}
 }
 
 /* MEDIUM SCREEN */
 
 @media screen and {
+
 
 }

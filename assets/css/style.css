@@ -24,8 +24,9 @@ h1 {
     font-family: BioRhyme, sans-serif;
     letter-spacing: 3px;
     color: white;
-    font-size: 150%;
+    font-size: 200%;
     letter-spacing: 15px;
+    text-align: left;
     
 }
 
@@ -33,7 +34,7 @@ h2 {
   font-family: BioRhyme, sans-serif;
   letter-spacing: 3px;
   color: white;
-  font-size: 100%;
+  font-size: 175%;
   letter-spacing: 12px;
   
 }
@@ -44,8 +45,9 @@ h2 {
 
 .header img {
     float: left;
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
+    margin: 5px;
     
   }
   
@@ -105,7 +107,7 @@ h2 {
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: #04AA6D;
+  background-color: black;
   color: white;
   width: 90px;
 }

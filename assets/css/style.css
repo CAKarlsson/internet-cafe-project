@@ -215,24 +215,41 @@ h2 {
     position: relative;
 }
 
-#cover-text {
-    color: white;
-}
-
 #hero-image {
     height: 900px;
     width: 100%;
     background: url(../images/hero-image.jpg) no-repeat center center;
 }
 
+#hero-image-txt {
+    color: white;
+    position: absolute;
+    left: 125px;
+    bottom: 50px;
+}
+
+
+#tripadv {
+  right: 50px;
+  position: absolute;
+}
 
 /* footer styles */
 
-footer {
-    height: 150px;
-    position: relative;
-    bottom: 0;
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
 
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
 }
 
 .social-networks {
@@ -248,4 +265,5 @@ footer {
     margin: 1%;
     padding: 5%;
     color: white;
+
 }

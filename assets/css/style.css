@@ -178,6 +178,17 @@ footer {
 
 }
 
+/* gallery */
+
+#photos {
+  clear: both;
+  line-height: 0;
+  column-count: 4;
+  column-gap: 0;
+}
+
+#photos > img {
+  width: 100%;
 /*---- LARGE SCREEN ----*/
 
 /* for larger to medium screens size from 1200px wide and down */

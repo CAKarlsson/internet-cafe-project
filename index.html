@@ -19,34 +19,24 @@
         </h1>
         </div>
         </a>
-        <nav id="menu">
-            <div class="menu-wrap">
-                <input type="checkbox" class="toggler">
-                <div class="hamburger"><div></div></div>
-                <div class="menu">
-                  <div>
-                    <div>
-                      <ul>
-                        <li><a href="#">Sign up</a></li>
-                        <li><a href="#">Reservations</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="index.html">Home</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <ul>
-                <li>
-                    <a href="">Contact</a>
-                </li>
-                <li>
-                    <a href="">About us</a>
-                </li>
-                <li>
-                    <a href="">Home</a>
-                </li>
-            </ul>
+        <nav id="navbar">
+            <!--Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="index.html">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#about-us">About</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
         </nav>
     </header>
     <section id="hero-outer">
@@ -57,9 +47,12 @@
             </div>
         </div>
     </section>
-    <section>
-        <h2>gfdsgfd</h2>
-        <p></p>
+    <section id="about-us">
+        <h2>About us</h2>
+        <p>Café Click&Kick is a gamingcenter/arcade. We have wide range of gaming setups, consoles and retro arcades.</p>
+        <p>We can offer a calm and safe enviroment where people from all ages can meet, play or just hang out.</p>
+        <p>What do you need to bring? Nothing but a good attitude, because everything else is setup for you!</p>
+        <p>With our 4-star restaurant you can be assured that no gamer stomach goes empty.</p>
         <div class="elfsight-app-f1794f8d-4f97-4aaf-99b7-d01e172315a2" id="tripadv"></div>
     </section>
     <footer>
@@ -80,6 +73,17 @@
     </footer>
     <script src="https://kit.fontawesome.com/ca933f7f3f.js" crossorigin="anonymous"></script>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */ 
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
 </body>
 
 </html>

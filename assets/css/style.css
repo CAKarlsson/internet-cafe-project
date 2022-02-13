@@ -201,6 +201,7 @@ footer {
   line-height: 0;
   column-count: 4;
   column-gap: 0;
+  margin-top: 15px;
 }
 
 #photos > img {

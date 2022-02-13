@@ -11,7 +11,7 @@ html, body{
     height: 100%;
     font-family: Lato, sans-serif;
     font-weight: 300;
-    color: white;
+    color: #1E1E1E;
     background-color: #FF6F61;
     letter-spacing: 0.8px;
     font-size: 16px;
@@ -23,7 +23,7 @@ html, body{
 h1 {
     font-family: BioRhyme, sans-serif;
     letter-spacing: 3px;
-    color: white;
+    color: #1E1E1E;
     font-size: 200%;
     letter-spacing: 15px;
     text-align: left;
@@ -33,7 +33,7 @@ h1 {
 h2 {
   font-family: BioRhyme, sans-serif;
   letter-spacing: 3px;
-  color: white;
+  color: #1E1E1E;
   font-size: 175%;
   letter-spacing: 12px;
   
@@ -45,8 +45,6 @@ h2 {
 
 .header img {
     float: left;
-    width: 75px;
-    height: 75px;
     margin: 5px;
     
   }
@@ -141,6 +139,10 @@ h2 {
     padding: 15px;
 }
 
+#hero-image-txt h2 {
+  color: white;
+}
+
 #tripadv {
   position: absolute;
 }
@@ -153,6 +155,20 @@ h2 {
 
 #hrstyle {
   border-top: 10px solid transparent;
+}
+
+/* map styles */
+
+#map-wrapper {
+
+  height: 300px;
+  margin-bottom: 107px;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  border: none;
 }
 
 /* footer styles */

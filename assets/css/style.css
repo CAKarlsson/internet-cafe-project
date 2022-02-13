@@ -18,6 +18,15 @@ html, body{
     overflow-x: hidden;
 }
 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
 /* headings and logo */
 
 h1 {
@@ -39,19 +48,9 @@ h2 {
   
 }
 
-#logo {
-    float: left;
-}
-
-.header img {
-    float: left;
-    margin: 5px;
-    
-  }
-  
   .header h1 {
     position: relative;
-    top: 18px;
+    top: 12px;
     left: 10px;
   }
 
@@ -143,19 +142,25 @@ h2 {
   color: white;
 }
 
-#tripadv {
-  position: absolute;
-}
 
-/* about us  */
+/* content style  */
 
 #about-us {
-  margin-top: 15px;
+  margin:15px 5px 0 5px;
 }
 
-#hrstyle {
+#hrstyle1 {
   border-top: 10px solid transparent;
 }
+
+#hrstyle2 {
+  border-top: 5px solid transparent;
+}
+
+#contact {
+  margin:15px 5px 10px 5px;
+}
+
 
 /* map styles */
 
@@ -171,11 +176,20 @@ h2 {
   border: none;
 }
 
+/* trip adv styles */
+
+#tripadv {
+  position: relative;
+}
+
+
 /* footer styles */
 
-footer {
-  bottom:0px;
-  height:30px;
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
 }
 
 .social-networks {
@@ -238,13 +252,11 @@ hero-outer {
 }
 
 #tripadv {
-  bottom: 0px;
-  position: absolute;
+  position: relative;
 }
 
 /* MEDIUM SCREEN */
 
-@media screen and {
-
+@media screen and (min-width 950px){
 
 }
